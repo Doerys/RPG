@@ -1,0 +1,12 @@
+.terrain{
+    
+}
+
+
+
+.personnages{
+    display: flex;
+    flex-direction: column;
+
+}
+
