@@ -1,0 +1,45 @@
+body
+{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 4px solid black;
+  height: 100vh;
+}
+
+terrain
+{
+  display: flex;
+  justify-content: space-around;
+  border: 4px solid purple;
+}
+
+personnages
+{
+    background-color: yellowgreen;
+    font: 2em, bold, capitalize, blue;
+    padding: 5px 5px 5px 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+monstres
+{
+    background-color: red;
+    font: 2em, bold, capitalize;
+    padding: 5px 5px 5px 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+#attaqueJoueur
+{
+  display: inline-block;
+  justify-content: middle;
+  background-color: red;
+  font: 2em, bold, capitalize;
+  padding: 5px 5px 5px 5px;
+  border: 3px solid pink;
+  border-radius: 5px;
+}
