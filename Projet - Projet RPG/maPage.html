@@ -7,20 +7,52 @@
     </head>
     <body>
 
-        <terrain>
-            <personnages>
-                <div class = personnage>Brave hero</div>
-            </personnages>
+        <scene>
+            <vieHeros>
+                <vieHero1>
+                    <div id = vieHero1>50</div>/50
+                </vieHero1>
+                <vieMonstre2>
+                    <div id = vieMonstre1>20</div>/20
+                </vieMonstre2>
+            </vieHeros>
 
-            <monstres>
-            <div class = monstre>Agrou mechant</div>
-            </monstres>
-          
-        </terrain>
+            <combat>
+                <heros>
+                    <spriteHero1>
+                        <h2>Brave Hero</h2>
+                        <img src="images/personnage.png" alt= "Personnage"/>
+                    </spriteHero1>
+                </heros>
+
+                <monstres>
+                    <spriteMonstre1>
+                        <h2>Agrou méchant</h2>
+                        <img src="images/monstre.png" alt= "Monstre"/>
+                    </spriteMonstre1>
+                </monstres>
+            </combat>
+
+        </scene>
         
-        <div id="boiteDeDialogue"></div>
         <UI>
-             <div id="attaqueJoueur">Clique ici pour faire attaquer le joueur ! Ya !</div>
-        </UI>
+
+            <skillsHero>
+                <boutonAttaque>
+                    Attaque
+                </boutonAttaque>
+
+                <boutonDefense>
+                    Défense
+                </boutonDefense>
+
+                <boutonSpecial>
+                    Attaque Spéciale !
+                </boutonSpecial>
+            </skillsHero>
+
+            <boiteDialogue>
+                <div id = "contenuBoiteDialogue">Le jeu commence !</div>
+            </boiteDialogue>
     </body>
 </html>
