@@ -1,25 +1,22 @@
-attaqueJoueur = document.getElementById("attaqueJoueur");
-pvMonstre = document.getElementById("pvMonstre");
-pvJoueur = document.getElementById("pvJoueur");
-ouille = document.getElementById("ouille");
-boiteDeDialogue = document.getElementById("boiteDeDialogue");
-gameOver = document.getElementById("gameOver") ;
+boutonAttaque = document.getElementById("boutonAttaque");
+vieMonstre1 = document.getElementById("vieMonstre1");
+vieHero1 = document.getElementById("vieHero1");
+contenuBoiteDialogue = document.getElementById("contenuBoiteDialogue");
+animationHero = document.getElementById("animationHero");
   
+boutonAttaque.onclick = function() {
+    vieMonstre1.innerHTML = parseInt(vieMonstre1.innerHTML) - 5;
+    contenuBoiteDialogue.innerHTML = "Le monstre subit 5 dégâts ! Mais il riposte aussitôt, et vous inflinge 5 dégâts.";
+    vieHero1.innerHTML = parseInt(vieHero1.innerHTML) - 5;
 
-attaqueJoueur.onclick = function() {
-    pvMonstre.innerHTML = parseInt(pvMonstre.innerHTML) - 5;
-
-    boiteDeDialogue.innerHTML = "Quelqu'un subit 5 dégâts !";
-
-    if (pvMonstre.innerHTML <= 0) {
-        pvMonstre.innerHTML = 0;
-        boiteDeDialogue.innerHTML = "Le monstre est vaincu. Tu as gagné ! Bravo.";
+    if (vieMonstre1.innerHTML <= 0) {
+        contenuBoiteDialogue.innerHTML = 0;
+        contenuBoiteDialogue.innerHTML = "Le monstre est vaincu. Tu as gagné ! Bravo.";
         }
     
-    if (pvJoueur.innerHTML <= 0) {
-        pvJoueur.innerHTML = 0;
-        boiteDeDialogue.innerHTML = "Tu es vaincu. Tu as perdu, dommage.";
+    if (vieHero1.innerHTML <= 0) {
+        vieHero1.innerHTML = 0;
+        contenuBoiteDialogue.innerHTML = "Tu es vaincu. Tu as perdu, dommage.";
         }
-
     }
 

@@ -9,28 +9,32 @@
 
         <scene>
             <vieHeros>
+                <vieMonstre1>
+                    Vie du Monstre : 
+                    <div id = vieMonstre1>20</div>
+                    /20
+                </vieMonstre1>
                 <vieHero1>
-                    <div id = vieHero1>50</div>/50
+                    Vie du Héros : 
+                    <div id = vieHero1>50</div>
+                    /50
                 </vieHero1>
-                <vieMonstre2>
-                    <div id = vieMonstre1>20</div>/20
-                </vieMonstre2>
             </vieHeros>
 
             <combat>
-                <heros>
-                    <spriteHero1>
-                        <h2>Brave Hero</h2>
-                        <img src="images/personnage.png" alt= "Personnage"/>
-                    </spriteHero1>
-                </heros>
-
                 <monstres>
                     <spriteMonstre1>
                         <h2>Agrou méchant</h2>
-                        <img src="images/monstre.png" alt= "Monstre"/>
+                        <img id = "animationMonstre" src="images/idleMonstre.gif" alt= "Monstre"/>
                     </spriteMonstre1>
                 </monstres>
+
+                <heros>
+                    <spriteHero1>
+                        <h2>Brave Hero</h2>
+                            <img id = "animationHero" src="images/idlePersonnage.gif" alt= "Personnage"/>
+                    </spriteHero1>
+                </heros>
             </combat>
 
         </scene>
@@ -38,17 +42,18 @@
         <UI>
 
             <skillsHero>
-                <boutonAttaque>
+
+                <div id = "boutonAttaque">
                     Attaque
-                </boutonAttaque>
+                </div>
 
-                <boutonDefense>
+                <div id = "boutonDefense">
                     Défense
-                </boutonDefense>
+                </div>
 
-                <boutonSpecial>
-                    Attaque Spéciale !
-                </boutonSpecial>
+                <div id = "boutonPouvoir">
+                    Pouvoir
+                </div>
             </skillsHero>
 
             <boiteDialogue>
