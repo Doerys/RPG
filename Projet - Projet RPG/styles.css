@@ -1,7 +1,6 @@
-@font-face 
-{
-  font-family: 'Upheavtt';
-  src: url('font/upheavtt.ttf') format ('ttf');
+@font-face {
+  font-family: 'Pixellari';
+  src: url("fonts/Pixellari.ttf") format ('truetype');
 }
 body
 {
@@ -10,15 +9,21 @@ body
   border: 4px solid black;
 }
 
+h2, h3
+{
+  font-family: 'Pixellari', Impact, Arial, sans-serif;
+}
+
 vieHeros
 {
   display: flex;
   justify-content: space-between;
 }
 
-vieHero1
+vieHero1 h3
 {
   display: flex;
+  flex-direction: row;
   padding: 3px 3px 3px 3px;
   margin: 3px 3px 3px 3px;
   background-color: yellowgreen;
@@ -26,7 +31,7 @@ vieHero1
   border-radius: 6px;
 }
 
-vieMonstre1
+vieMonstre1 h3
 {
   display: flex;
   padding: 3px 3px 3px 3px;
@@ -53,7 +58,6 @@ combat
 heros h2
 {
     background-color: yellowgreen;
-    font-family: 'Upheavtt', Arial;
     font: 2em, bold, capitalize, blue;
     padding: 5px 5px 5px 5px;
     border: 3px solid black;
@@ -63,7 +67,6 @@ heros h2
 monstres h2
 {
     background-color: red;
-    font-family: 'Upheavtt', Arial;
     font: 2em, bold, capitalize;
     padding: 5px 5px 5px 5px;
     border: 3px solid black;
